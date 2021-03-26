@@ -27,11 +27,12 @@
 
 </script>
 <style type="text/css"><!--
-body, a {
+body, a, h1, h2, table, td, tr {
   color: white;
   background-color: black;
   font-family: monospace;
   text-decoration: none;
+  font-size: 1em;
 }
 
 div.content {
@@ -44,7 +45,7 @@ div.content {
   text-align: center;
 }
 
-div#d2isbest {
+#d2isbest {
   border-radius: 5px 5px 5px 5px;
   -webkit-animation: glow 2s ease-in-out infinite alternate;
   -moz-animation: glow 2s ease-in-out infinite alternate;
@@ -89,11 +90,14 @@ div.discord img, div.steam img {
   vertical-align: middle;
 }
 
-div.gamebox {
+h2.gamebox {
   display: inline-flex;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: normal;
 }
 
 div.game_image {
@@ -106,13 +110,14 @@ div.game_image {
 }
 
 div.ascii-table {
-    font: medium/1 monospace;
-    display: inline-block;
+  display: inline-block;
 }
+
 .ascii-table table {
-    border-collapse: collapse;
-    table-layout: fixed;
+  border-collapse: collapse;
+  table-layout: fixed;
 }
+
 .ascii-table td {
   margin: 0px;
   padding: 0px;
@@ -120,8 +125,6 @@ div.ascii-table {
 }
 
 .logo, .logo h1 {
-  font-family: monospace;
-  font-size: 1em;
   font-weight: normal;
 }
 
@@ -170,9 +173,9 @@ var loopmax = 3000;
     <col width="33%"/>
     <tr><td colspan=3><code><pre>+----------------------+----------------------+----------------------+</pre></code></td></tr>
     <tr>
-      <td><div class="gamebox" id="d2isbest"><div class="game_image" style="background-image: url('games/destiny2.png');"></div><a href="https://www.bungie.net/en/ClanV2/Index?groupId=2080465">Destiny 2</a></div></td>
-      <td><div class="gamebox"><div class="game_image" style="background-image: url('games/elitedangerous.png');"></div>Elite Dangerous</div></td>
-      <td><div class="gamebox"><div class="game_image" style="background-image: url('games/hell-let-loose.png');"></div>Hell Let Loose</div></td>
+      <td><h2 class="gamebox" id="d2isbest"><div class="game_image" style="background-image: url('games/destiny2.png');"></div><a href="https://www.bungie.net/en/ClanV2/Index?groupId=2080465">Destiny 2</a></h2></td>
+      <td><h2 class="gamebox"><div class="game_image" style="background-image: url('games/elitedangerous.png');"></div><a href="#">Elite Dangerous</a></h2></td>
+      <td><h2 class="gamebox"><div class="game_image" style="background-image: url('games/hell-let-loose.png');"></div><a href="#">Hell Let Loose</a></h2></td>
     </tr>
     <tr><td colspan=3><code><pre>+----------------------+----------------------+----------------------+</pre></code></td></tr>
   </table>
